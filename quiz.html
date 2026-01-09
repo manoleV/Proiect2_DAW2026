@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test HaosControl | Cât de haotic e haosul tău</title>
+  <meta name="description" content="Un test interactiv care îți arată unde se rupe organizarea ta academică." />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><span class="logo-haos">Haos</span><span class="logo-control">Control</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Acasă</a>
+        <a href="services.html">Servicii</a>
+        <a href="about.html">Despre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quiz Intro -->
+    <section class="quiz-intro">
+      <div class="container narrow">
+        <h1>Cât de haotic e haosul tău?</h1>
+        <p>
+          Un test rapid care îți arată punctele tale slabe de organizare.
+        </p>
+        <button id="startQuiz" class="btn-primary large">Începe testul</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section hidden" id="quizSection">
+      <div class="container narrow">
+        <div id="questionBox"></div>
+        <div class="quiz-actions">
+          <button id="nextBtn" class="btn-primary">Următoarea</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result Section -->
+    <section class="quiz-result hidden" id="resultSection">
+      <div class="container narrow">
+        <h2 id="resultTitle"></h2>
+        <p id="resultText"></p>
+        <div class="result-actions">
+          <a href="services.html" class="btn-primary">Vezi ce te poate ajuta</a>
+          <a href="index.html" class="btn-secondary">Înapoi la început</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <p>📍 Târgu Mureș</p>
+      <p>✉️ <a href="mailto:example@example.com">example@example.com</a></p>
+      <p>📞 <a href="tel:+40123456789">+40 123 456 789</a></p>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 HaosControl</p>
+      <p>Control suficient. Fără perfecțiune.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
